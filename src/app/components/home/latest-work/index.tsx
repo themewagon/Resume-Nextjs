@@ -1,4 +1,5 @@
 "use client";
+import { getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -39,7 +40,7 @@ const LatestWork = () => {
                   >
                     <div className="relative">
                       <Image
-                        src={value?.image}
+                        src={getImgPath(value?.image)}
                         alt="image"
                         width={570}
                         height={414}
@@ -81,7 +82,7 @@ const LatestWork = () => {
                           <h5>{value?.title}</h5>
                         </Link>
                         <Image
-                          src={"/images/icon/right-arrow-icon.svg"}
+                          src={getImgPath("/images/icon/right-arrow-icon.svg")}
                           alt="right-arrow-icon"
                           width={30}
                           height={30}
