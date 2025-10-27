@@ -47,7 +47,8 @@ const LatestWork = () => {
                         className="rounded-lg w-full h-full object-cover"
                       />
                       <Link
-                        href={`${value.slug}`}
+                        onClick={(e) => e.preventDefault()}
+                        href={"#!"}
                         className="absolute top-0 left-0 backdrop-blur-xs bg-primary/15 w-full h-full hidden group-hover:flex rounded-lg"
                       >
                         <span className="flex justify-center items-center p-5 w-full">

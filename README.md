@@ -31,12 +31,12 @@ npm run build
 
 ## Author
 
-Design and code are written by the Wrappixel design & development team.  
+Design and code are written by the getnextjstemplates design & development team.  
 
 
 ## License
 
- - Design and Code is Copyright &copy; [Wrappixel](https://www.wrappixel.com/)
+ - Design and Code is Copyright &copy; [getnextjstemplates](https://getnextjstemplates.com/)
  - Licensed under [MIT]
  - Distributed by [ThemeWagon](https://themewagon.com)
 
