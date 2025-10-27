@@ -1,5 +1,5 @@
 "use client";
-import { getImgPath } from "@/utils/image";
+import { getDataPath, getImgPath } from "@/utils/image";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -17,7 +17,7 @@ const Contact = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("/data/page-data.json");
+        const res = await fetch(getDataPath("/data/page-data.json"));
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
         setContactData(data?.contactLinks);
